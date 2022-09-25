@@ -8,7 +8,12 @@ pipeline {
             }
         }
 
-        stage('Bbuild'){
+        stage('Build'){
+            agent {
+                docker {
+                    image 'node:lts-bullseye-slim' 
+                }
+            }
             steps {
                 echo "Compile Frontend"
                 dir("${env.WORKSPACE}/frontend"){
