@@ -1,6 +1,9 @@
 pipeline {
     agent any
     stages {
+        stage('Git-Checkout'){
+            git 'https://github.com/mrvincentoti/jenkins-aws.git'
+        }
         stage('Compile'){
             steps {
                 echo "Compile Successfully"
