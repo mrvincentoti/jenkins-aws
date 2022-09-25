@@ -11,8 +11,11 @@ pipeline {
         stage('Compile'){
             steps {
                 echo "Compile Successfully"
-                sh 'chmod a+x build-frontend.sh'
-                sh './build-frontend.sh'
+                dir("${env.WORKSPACE}/test"){
+                    sh "touch server.js"
+                }
+                // sh 'chmod a+x build-frontend.sh'
+                // sh './build-frontend.sh'
             }
         }
 
