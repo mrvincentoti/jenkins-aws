@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Compile Successfully"
                 sh 'chmod a+x ${env.WORKSPACE}/build-frontend.sh'
-                sh './${env.WORKSPACE}/build-frontend.sh'
+                sh './build-frontend.sh'
             }
         }
 
