@@ -4,6 +4,7 @@ pipeline {
         stage('Compile'){
             steps {
                 echo "Compile Successfully"
+                sh 'build-frontend.sh'
             }
         }
 
