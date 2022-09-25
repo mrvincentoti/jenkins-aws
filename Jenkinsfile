@@ -8,14 +8,12 @@ pipeline {
             }
         }
 
-        stage('Compile'){
+        stage('Bbuild'){
             steps {
-                echo "Compile Successfully"
-                dir("${env.WORKSPACE}/test"){
-                    sh "touch server.js"
+                echo "Compile Frontend"
+                dir("${env.WORKSPACE}/frontend"){
+                    sh 'npm --version'
                 }
-                // sh 'chmod a+x build-frontend.sh'
-                // sh './build-frontend.sh'
             }
         }
 
