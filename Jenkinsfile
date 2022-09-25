@@ -11,7 +11,7 @@ pipeline {
         stage('Compile'){
             steps {
                 echo "Compile Successfully"
-                sh 'chmod a+x ${env.WORKSPACE}/build-frontend.sh'
+                sh 'chmod a+x build-frontend.sh'
                 sh './build-frontend.sh'
             }
         }
