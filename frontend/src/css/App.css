@@ -1,0 +1,233 @@
+.App{
+    padding: 0px 20px 0px 0px;
+}
+/*
+SIDEBAR
+*/
+.sidebar{
+    width: 250px;
+}
+
+.sidebar .logo{
+    padding: 10px 25px;
+}
+
+.sidebar .logo img{
+    height: 40px;
+}
+
+.sidebar .nav{
+    padding: 50px 35px;
+}
+.sidebar .nav li{
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar .nav li a{
+    padding: 12px 20px;
+    margin-bottom: 6px;
+}
+
+.sidebar .nav li a .ico{
+    margin-right: 10px;
+}
+
+.sidebar .nav li a .lbl{}
+
+.sidebar .nav li a.on {
+    border-left:2px #8710d8 solid;
+    line-height: 1;
+}
+
+.sidebar .updated-course{
+    padding: 0px 35px;
+    margin: 20px 0px;
+}
+.sidebar .updated-course .icon{
+    background: #8710d8;
+    padding:17px;
+    border-radius: 25px;
+}
+.sidebar .updated-course .lbl{}
+.sidebar .updated-course .lbl .author{}
+
+.sidebar .stats{
+    padding: 70px 50px;
+}
+.sidebar .stats .stats-box{
+    flex-direction: column;
+    width:110px;
+}
+.sidebar .stats .stats-box .icon{
+    margin-bottom: 15px;
+}
+.sidebar .stats .stats-box .val{}
+.sidebar .stats .stats-box .lbl{}
+
+.sidebar .stats .stats-box .icon-points {
+ color:#50C878;
+}
+
+.sidebar .stats .stats-box .icon-battery {
+    color: #C70039;
+}
+
+.sidebar .me{
+    padding:20px 40px;
+}
+.sidebar .me .photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-right: 10px;
+    background: #eee;
+}
+.sidebar .me .photo .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.sidebar .me .lbl{}
+
+.app-content{
+    flex: 2;
+    padding: 20px 0px;
+}
+
+/*
+    RIGHT BAR
+*/
+.rightbar{
+    flex: 1;
+    padding:20px 0px;
+}
+
+.rightbar .search-box{
+    border:1px #ccc solid;
+    border-radius: 5px;
+    padding:2px;
+    margin: 10px 0px;
+}
+.rightbar .search-box .qry{
+    flex:1;
+    border:0px;
+    padding:12px;
+}
+.rightbar .search-box .go{
+    border:0px;
+    background: #de240f;
+    padding:0px 20px;
+    border-radius: 5px;
+}
+.rightbar .search-box .go:hover{
+    background: #d24444;
+}
+/*
+    HOME PAGE
+*/
+
+.home-page{}
+.home-page .section{}
+.home-page .section .title{
+    margin-bottom: 20px;
+}
+.home-page .section .tutors{}
+.home-page .section .tutors .tutor{
+    border: 2px solid red;
+    background: #ddd;
+    width: 50px;
+    height: 50px;
+    overflow:hidden;
+    margin-right: 20px;
+    border-radius:30px;
+    padding:5px;
+}
+.home-page .section .tutors .tutor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.home-page .section .tutors .tutor:hover{}
+
+.home-page .section-b{
+    margin-top: 50px;
+}
+
+.home-page .section .courses{}
+
+.home-page .section .courses a{}
+
+.home-page .section .courses .block{
+    width: 270px;
+    height: 375px;
+    border-radius: 20px;
+    background-size: cover !important;
+    margin-right:12px !important;
+}
+
+.home-page .section .courses .block .user{
+    padding: 20px;
+    z-index: 1;
+}
+.home-page .section .courses .block .user .pic{
+    width: 40px;
+    height: 40px;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    padding:5px;
+    margin-right:10px;
+}
+.home-page .section .courses .block .user .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.home-page .section .courses .block .user .meta{}
+.home-page .section .courses .block .user .meta .name{}
+.home-page .section .courses .block .user .meta .uname {}
+
+.home-page .section .courses .block .dura{
+    top: 75px;
+    left: 25px;
+    background: #de240f;
+    line-height: 1;
+    padding:8px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.33);
+    z-index: 1;
+}
+
+.home-page .section .courses .block .course-title {
+    bottom: 15px;
+    left:15px;
+    right:15px;
+    background: rgba(0, 0, 0, 0.75);
+    padding:15px 20px;
+    border-radius:20px;
+    text-shadow: 1px 1px #000;
+}
+
+.home-page .top-tutors{
+    flex-wrap: wrap;
+}
+.home-page .section .user-block{
+    margin: 0px 50px 30px 0px;
+}
+.home-page .section .user-block .pic{
+    width: 40px;
+    height: 40px;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+.home-page .section .user-block .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.home-page .section .user-block .meta{}
+.home-page .section .user-block .meta .name{}
+.home-page .section .user-block .meta .uname{}
