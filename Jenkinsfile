@@ -19,6 +19,8 @@ pipeline {
                 echo "Compile Frontend"
                 dir("${env.WORKSPACE}/frontend"){
                     sh 'npm --version'
+                    sh 'npm install'
+                    sh 'npm run build'
                 }
             }
         }
