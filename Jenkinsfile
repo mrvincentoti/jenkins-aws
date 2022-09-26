@@ -15,6 +15,9 @@ pipeline {
                     reuseNode true
                 }
             }
+            environment {
+                NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+            }
             steps {
                 echo "Compile Frontend"
                 dir("${env.WORKSPACE}/frontend"){
